@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20668b3ae3b89ce35dd9bf6c1745f2cc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20668b3ae3b89ce35dd9bf6c1745f2cc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20668b3ae3b89ce35dd9bf6c1745f2cc = L.map(
+                "map_20668b3ae3b89ce35dd9bf6c1745f2cc",
+                {
+                    center: [42.3569, -71.0622],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_58f96bdd5d7460fe3686aace2c0ff8b1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var marker_55387b041e414f6910aa07f50f92d5cf = L.marker(
+                [42.3569, -71.0622],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var icon_b615d3ce72df83ed7b1b3734cfd57fdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55387b041e414f6910aa07f50f92d5cf.setIcon(icon_b615d3ce72df83ed7b1b3734cfd57fdb);
+        
+    
+        var popup_2e70f408ed89c0ef67539cce0bf6cf06 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_508c16a99562eaa9cf405ea46b2bd8b3 = $(`<div id="html_508c16a99562eaa9cf405ea46b2bd8b3" style="width: 100.0%; height: 100.0%;">0. Sargent Hall (Suffolk University)<br>120 Tremont St, Boston, MA 02108</div>`)[0];
+            popup_2e70f408ed89c0ef67539cce0bf6cf06.setContent(html_508c16a99562eaa9cf405ea46b2bd8b3);
+        
+
+        marker_55387b041e414f6910aa07f50f92d5cf.bindPopup(popup_2e70f408ed89c0ef67539cce0bf6cf06)
+        ;
+
+        
+    
+    
+            marker_55387b041e414f6910aa07f50f92d5cf.bindTooltip(
+                `<div>
+                     0. Sargent Hall (Suffolk University)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44ef52e33dcf8231ff8dddfa6aea0b93 = L.marker(
+                [42.3569, -71.0622],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var div_icon_129c4887c0f3f858fb6dc5d39101cae3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; font-weight: bold; color: red;\"\u003e0\u003c/div\u003e"});
+            marker_44ef52e33dcf8231ff8dddfa6aea0b93.setIcon(div_icon_129c4887c0f3f858fb6dc5d39101cae3);
+        
+    
+            var marker_0ecf05a99a1e6c7dbd11d84899613af7 = L.marker(
+                [42.35798, -71.06014],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+        var popup_d192e415ebda865e3b230515828f840c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb9289c539a17d2cab5186bc8fefe33b = $(`<div id="html_fb9289c539a17d2cab5186bc8fefe33b" style="width: 100.0%; height: 100.0%;">1. Omni Parker House<br>60 School Street, Boston, MA 02108<br>$289/night (7/22–7/30), 2-min walk</div>`)[0];
+            popup_d192e415ebda865e3b230515828f840c.setContent(html_fb9289c539a17d2cab5186bc8fefe33b);
+        
+
+        marker_0ecf05a99a1e6c7dbd11d84899613af7.bindPopup(popup_d192e415ebda865e3b230515828f840c)
+        ;
+
+        
+    
+    
+            marker_0ecf05a99a1e6c7dbd11d84899613af7.bindTooltip(
+                `<div>
+                     1. Omni Parker House
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac55cb6e22fe13b50292e95e43fa8059 = L.marker(
+                [42.35798, -71.06014],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var div_icon_8bbe55e2e543740b38579babaa777961 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; font-weight: bold; color: black;\"\u003e1\u003c/div\u003e"});
+            marker_ac55cb6e22fe13b50292e95e43fa8059.setIcon(div_icon_8bbe55e2e543740b38579babaa777961);
+        
+    
+            var marker_73f9bd415678526a502b9ab0265b99f7 = L.marker(
+                [42.3575, -71.0605],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+        var popup_4abe9f1b61060551e483cee379e20b03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2708bd8d9aace88d8913d9dd1675c384 = $(`<div id="html_2708bd8d9aace88d8913d9dd1675c384" style="width: 100.0%; height: 100.0%;">2. Miller Hall (Suffolk Dormitory)<br>10 Somerset Street, Boston, MA 02108<br>$100/night (7/23–7/27), shared bathroom</div>`)[0];
+            popup_4abe9f1b61060551e483cee379e20b03.setContent(html_2708bd8d9aace88d8913d9dd1675c384);
+        
+
+        marker_73f9bd415678526a502b9ab0265b99f7.bindPopup(popup_4abe9f1b61060551e483cee379e20b03)
+        ;
+
+        
+    
+    
+            marker_73f9bd415678526a502b9ab0265b99f7.bindTooltip(
+                `<div>
+                     2. Miller Hall (Suffolk Dormitory)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26ea5c6a138ab8ab30020432beeac97b = L.marker(
+                [42.3575, -71.0605],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var div_icon_7117f382509b81e6c4d55f2e7798f8c2 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; font-weight: bold; color: black;\"\u003e2\u003c/div\u003e"});
+            marker_26ea5c6a138ab8ab30020432beeac97b.setIcon(div_icon_7117f382509b81e6c4d55f2e7798f8c2);
+        
+    
+            var marker_ed45bdb5eea87dd799f4a383feea5a80 = L.marker(
+                [42.362, -71.0633],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+        var popup_a49be2d8a20380effae85b9e0b9e62c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae8b47bbcd99a57397138defc46ee56b = $(`<div id="html_ae8b47bbcd99a57397138defc46ee56b" style="width: 100.0%; height: 100.0%;">3. The Boxer Hotel Boston<br>107 Merrimac Street, Boston, MA 02114<br>$289/night, 0.6 miles to venue, 5-min walk to Sargent Hall</div>`)[0];
+            popup_a49be2d8a20380effae85b9e0b9e62c8.setContent(html_ae8b47bbcd99a57397138defc46ee56b);
+        
+
+        marker_ed45bdb5eea87dd799f4a383feea5a80.bindPopup(popup_a49be2d8a20380effae85b9e0b9e62c8)
+        ;
+
+        
+    
+    
+            marker_ed45bdb5eea87dd799f4a383feea5a80.bindTooltip(
+                `<div>
+                     3. The Boxer Hotel Boston
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94260e32998485d8d9d13669aee662f7 = L.marker(
+                [42.362, -71.0633],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var div_icon_fd01b5067af648ec750189787f66dda5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; font-weight: bold; color: black;\"\u003e3\u003c/div\u003e"});
+            marker_94260e32998485d8d9d13669aee662f7.setIcon(div_icon_fd01b5067af648ec750189787f66dda5);
+        
+    
+            var marker_0923544b5756211c13e9736fc9b8dc59 = L.marker(
+                [42.35785, -71.0615],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+        var popup_82d923cbf7366e8011f95a76aa375608 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_febf8a27831934acf9a0de70b8fc4dc0 = $(`<div id="html_febf8a27831934acf9a0de70b8fc4dc0" style="width: 100.0%; height: 100.0%;">4. Hotel AKA<br>90 Tremont St, Boston, MA 02108<br>150 steps to Sargent Hall</div>`)[0];
+            popup_82d923cbf7366e8011f95a76aa375608.setContent(html_febf8a27831934acf9a0de70b8fc4dc0);
+        
+
+        marker_0923544b5756211c13e9736fc9b8dc59.bindPopup(popup_82d923cbf7366e8011f95a76aa375608)
+        ;
+
+        
+    
+    
+            marker_0923544b5756211c13e9736fc9b8dc59.bindTooltip(
+                `<div>
+                     4. Hotel AKA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2de43010a1ef49d4e4b604d9565be7bd = L.marker(
+                [42.35785, -71.0615],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var div_icon_3cedcaa52c58a7e8a146f75152491716 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; font-weight: bold; color: black;\"\u003e4\u003c/div\u003e"});
+            marker_2de43010a1ef49d4e4b604d9565be7bd.setIcon(div_icon_3cedcaa52c58a7e8a146f75152491716);
+        
+    
+            var marker_9b2f181dd37ebb429552be87cc792996 = L.marker(
+                [42.3546, -71.0625],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+        var popup_abadf5450aaa18f6d26fbcc91dd9891c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f95d2c45b1063444eb8c373effa398e = $(`<div id="html_0f95d2c45b1063444eb8c373effa398e" style="width: 100.0%; height: 100.0%;">5. Hyatt Regency Boston<br>1 Ave de Lafayette, Boston, MA 02111<br>0.5 miles to Sargent Hall</div>`)[0];
+            popup_abadf5450aaa18f6d26fbcc91dd9891c.setContent(html_0f95d2c45b1063444eb8c373effa398e);
+        
+
+        marker_9b2f181dd37ebb429552be87cc792996.bindPopup(popup_abadf5450aaa18f6d26fbcc91dd9891c)
+        ;
+
+        
+    
+    
+            marker_9b2f181dd37ebb429552be87cc792996.bindTooltip(
+                `<div>
+                     5. Hyatt Regency Boston
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f103522d98083338ec958131e412a28 = L.marker(
+                [42.3546, -71.0625],
+                {}
+            ).addTo(map_20668b3ae3b89ce35dd9bf6c1745f2cc);
+        
+    
+            var div_icon_871ed407ccc8dece9e8b89a711b3a325 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12pt; font-weight: bold; color: black;\"\u003e5\u003c/div\u003e"});
+            marker_9f103522d98083338ec958131e412a28.setIcon(div_icon_871ed407ccc8dece9e8b89a711b3a325);
+        
+</script>
+</html>
